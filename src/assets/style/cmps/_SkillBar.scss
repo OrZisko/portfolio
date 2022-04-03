@@ -1,0 +1,20 @@
+.skill-bar-container {
+    padding: 10px;
+    width: 100%;
+    > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .skill-bar {
+        height: 10px;
+        background-color: rgba(211, 206, 206, 0.431);
+        border-radius: 5px;
+        width: 80%;
+        div {
+            height: 100%;
+            background-color: darkcyan;
+            border-radius: 5px;
+        }
+    }
+}

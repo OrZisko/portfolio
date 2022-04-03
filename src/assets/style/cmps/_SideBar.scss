@@ -1,0 +1,50 @@
+.side-bar {
+    position: fixed;
+    z-index: 2;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 150px;
+    @media (max-width: 900px) {
+        left: -150px;
+        transition: 0.2s;
+        &.shown {
+            left: 0;
+        }
+    }
+    .logo-container {
+        padding: 5px;
+        img {
+            width: 100%;
+        }
+    }
+    .web-nav {
+        border-top: 2.5px solid #282828;
+    }
+    .link-container {
+        height: 50px;
+        border-bottom: 2.5px solid #282828;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-nav {
+        height: 25%;
+        text-align: center;
+        a {
+            margin: 0 7px;
+            svg {
+                width: 1.5rem;
+            }
+        }
+    }
+    a {
+        transition: color 0.15s;
+        &:hover {
+            color: darkcyan;
+        }
+    }
+}

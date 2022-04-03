@@ -1,0 +1,26 @@
+.img-gallery {
+    .img-container {
+        display: flex;
+        overflow: hidden;
+        .site-img {
+            position: relative;
+            width: 100%;
+            transition: left 1.5s;
+        }
+    }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        .img-idx {
+            margin: 0 10px;
+            width: 20px;
+            height: 20px;
+            background-image: linear-gradient(to right, rgba(128, 128, 128, 0.335), rgba(255, 255, 255, 0.329));
+            border-radius: 50%;
+            &.now {
+                background-image: linear-gradient(to right, rgb(128, 128, 128), rgb(255, 255, 255));
+            }
+        }
+    }
+}

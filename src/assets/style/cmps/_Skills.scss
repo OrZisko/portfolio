@@ -1,0 +1,29 @@
+.skills {
+    .logos-container {
+        margin: 100px auto;
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .framework-logo {
+        width: 100px;
+        margin: 10px;
+    }
+    .skills-container {
+        width: 100%;
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 50%);
+        }
+    }
+    @media (max-width: 900px) {
+        .skills-container ul {
+            grid-template-columns: repeat(auto-fill, 100%);
+        }
+        .framework-logo {
+            width: 50px;
+        }
+    }
+}

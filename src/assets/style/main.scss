@@ -1,0 +1,24 @@
+//Setup
+@import "./setup/variables";
+@import "./setup/functions";
+@import "./setup/mixins";
+//Baseics
+@import "./basics/animations";
+@import "./basics/base";
+@import "./basics/helpers";
+@import "./basics/layour";
+@import "./basics/typography";
+//Pages
+@import "./views/SIteDetails";
+//Cmps
+@import "./cmps/SideBar";
+@import "./cmps/Landing";
+@import "./cmps/Portfolio";
+@import "./cmps/SitePreview";
+@import "./cmps/About";
+@import "./cmps/SkillBar";
+@import "./cmps/Skills";
+@import "./cmps/Contact";
+@import "./cmps/BurgerMenu";
+@import "./cmps/MouseTrail";
+@import "./cmps/ImgGallery";

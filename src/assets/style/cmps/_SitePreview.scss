@@ -1,0 +1,12 @@
+.site-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4 {
+        align-self: flex-start;
+        margin-bottom: 10px;
+    }
+    img {
+        width: 100%;
+    }
+}

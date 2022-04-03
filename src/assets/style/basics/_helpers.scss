@@ -1,0 +1,17 @@
+.main-cmp {
+    min-height: 100vh;
+    padding: 75px;
+    display: flex;
+    align-items: center;
+    grid-column: 2;
+    h1 {
+        margin-bottom: 100px;
+    }
+    @media (max-width: 560px) {
+        padding: 75px 5px;
+    }
+}
+
+.txt-container {
+    max-width: 800px;
+}

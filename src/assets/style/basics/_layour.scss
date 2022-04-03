@@ -1,0 +1,9 @@
+#app {
+    min-height: 100vh;
+    .app-container {
+        margin-left: 150px;
+        @media (max-width: 900px) {
+            margin-left: 0;
+        }
+    }
+}
