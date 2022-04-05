@@ -22,7 +22,7 @@ export function App() {
             <rect y="60" width="100" height="20"></rect>
           </svg>
         </div>
-        <SideBar isShown={isShown}></SideBar>
+        <SideBar closeSideBar={onShowMenu} isShown={isShown}></SideBar>
         <main className='app-container'>
           <Switch>
             <Route component={Site} path='/site/:id'></Route>

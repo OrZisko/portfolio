@@ -9,7 +9,6 @@ function Contact() {
         ev.preventDefault()
         try {
             const email = await emailjs.sendForm('service_50b3qzg', 'template_oiauwbe', form.current, 'SOeOpg11srwf352LI')
-            console.log(email);
         } catch (err) {
             console.log(err);
         }

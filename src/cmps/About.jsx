@@ -27,7 +27,7 @@ function About() {
                     </div>
                 </div>
                 <div className='img-container'>
-                    <img src={require('../assets/images/self.jpg')} />
+                    <img src={require('../assets/images/self.jpg')} alt="" />
                 </div>
             </div>
         </div>

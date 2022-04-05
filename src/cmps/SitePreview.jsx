@@ -8,7 +8,6 @@ function SitePreview({ site }) {
         ev.preventDefault()
         toggleShow(!isShown)
     }
-    console.log(site);
     useEffect(() => {
         // toggleShow(require(site.imgs[0]))
     }, [])

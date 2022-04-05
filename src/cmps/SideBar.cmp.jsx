@@ -1,30 +1,28 @@
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom"
 
-function SideBar({ isShown }) {
+function SideBar({ isShown, closeSideBar }) {
     return (
         <div className={isShown ? 'side-bar shown' : 'side-bar'}>
             <div className='logo-container'>
                 <a href="#landing">
-                    <img src={require('../assets/images/logo.png')} />
+                    <img src={require('../assets/images/logo.png')} alt="" />
                     <h3>Or Ziskovich</h3>
                     <span>Web Developer</span>
                 </a>
             </div>
             <nav className="web-nav">
                 <div className="link-container">
-                    <a href='#about'>About</a>
+                    <a onClick={closeSideBar} href='#about'>About</a>
                 </div>
                 <div className="link-container">
-                    <a href='#portfolio'>Porfolio</a>
+                    <a onClick={closeSideBar} href='#portfolio'>Porfolio</a>
                 </div>
                 <div className="link-container">
-                    <a href='#skills'>My Skills</a>
+                    <a onClick={closeSideBar} href='#skills'>My Skills</a>
                 </div>
-                {/* <div className="link-container">
-                    <a href='#resume'>Resume</a>
-                </div> */}
                 <div className="link-container">
-                    <a href='#contact'>Contact</a>
+                    <a onClick={closeSideBar} href='#contact'>Contact</a>
                 </div>
             </nav>
             <nav className="social-nav">

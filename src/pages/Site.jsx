@@ -27,7 +27,8 @@ function Site(props) {
                 <p>{site.desc}</p>
                 {site.special && <p className='special'>{site.special}</p>}
                 <a href={site.ip} target="_blank" rel='noreferrer'>Visit the Site</a> |
-                {site.github && <a href={site.github} target="_blank" rel='noreferrer'>Github</a>}
+                <a href={site.github[0]} target="_blank" rel='noreferrer'>Github</a>
+                {site.github.length > 1 && <span> | <a href={site.github[1]} target="_blank" rel='noreferrer'>Backend Github</a></span>}
             </div>
         </div>
     );
